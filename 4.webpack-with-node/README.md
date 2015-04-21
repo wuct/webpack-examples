@@ -1,4 +1,4 @@
-# Webpack with Node
+# 4. Webpack with Node
 We combine a webpack-dev-server with a node server.
 
 The node server provide the `index.html` on port `3000`, while the webpack-dev-server provide the `bundle.js` on port `8080`.

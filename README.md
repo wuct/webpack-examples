@@ -55,7 +55,7 @@ See `package.json` to know how we set this up, then try `npm run watch` in your 
 
 Both servers will reload lively when you edit a file.
 
-# 5. Webpack with Node
+# 5. Webpack in Backend
 
 We want to use an old version of node but write ES6. We also want to reload the node sever lively.
 

@@ -1,4 +1,4 @@
-# 5. Webpack with Node
+# 5. Webpack in Backend
 
 We want to use an old version of node but write ES6. We also want to reload the node sever lively.
 
