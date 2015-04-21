@@ -1,0 +1,26 @@
+{
+  "name": "4.webpack-with-node",
+  "version": "1.0.0",
+  "description": "We use `webpack-dev-server` to serve static files to a browser.",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/server",
+    "prestart": "npm run build",
+    "build": "parallelshell 'npm run build:server' 'npm run build:client'",
+    "build:server": "webpack --config ./webpack.server.config.js",
+    "build:client": "webpack --config ./webpack.config.js",
+    "watch:client": "webpack-dev-server --colors --inline --hot",
+    "watch:server": "nodemon --ignore build/ --exec npm run start",
+    "watch": "parallelshell 'npm run watch:server' 'npm run watch:client'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "parallelshell": "^1.1.1",
+    "source-map-support": "^0.2.10"
+  }
+}
