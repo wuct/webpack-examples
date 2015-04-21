@@ -21,7 +21,11 @@ For example,
 ```
 webpack-dev-server --colors --inline --hot
 ```
+## 進階用法
 
+Allow instantaneous live refresh without losing state while editing React components.
+
+- [React Hot](http://gaearon.github.io/react-hot-loader/getstarted/)
 
 ## 參考資料
 - [http://webpack.github.io/docs/webpack-dev-server.html]()
